@@ -44,8 +44,14 @@ class App
     g.closePath();
     g.stroke();
 
-    g.beginPath()
-    g.fillStyle = "red";
+    g.beginPath();
+    let randomgetal = Math.random();
+    console.log(randomgetal);
+    if (randomgetal < 0.5) {
+      g.fillStyle = "yellow";
+    } else {
+      g.fillStyle = "pink";
+    }
     g.moveTo(125,175);
     g.lineTo(275,212,5);
     g.lineTo(275,262,5);
